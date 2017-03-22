@@ -17,3 +17,15 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## Setup
+
+### Development
+
+```
+$ cp config/dev.secret.exs.example config/dev.secret.exs
+$ vi config/dev.secret.exs
+$ npm install
+$ mix deps.get
+$ mix phoenix.server
+```
