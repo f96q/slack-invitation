@@ -2,6 +2,7 @@ defmodule SlackInvitation.PageController do
   use SlackInvitation.Web, :controller
 
   def index(conn, _params) do
-    render conn, "index.html"
+    conn
+    |> redirect(to: invitation_path(conn, :index))
   end
 end
